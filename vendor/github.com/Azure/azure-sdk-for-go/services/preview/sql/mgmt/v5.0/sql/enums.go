@@ -466,7 +466,7 @@ const (
 	// CurrentBackupStorageRedundancyZone ...
 	CurrentBackupStorageRedundancyZone CurrentBackupStorageRedundancy = "Zone"
 	// CurrentBackupStorageRedundancyGeoZone ...
-	CurrentBackupStorageRedundancyGeoZone CurrentBackupStorageRedundancy = "Geo-Zone"
+	CurrentBackupStorageRedundancyGeoZone CurrentBackupStorageRedundancy = "GeoZone"
 )
 
 // PossibleCurrentBackupStorageRedundancyValues returns an array of possible values for the CurrentBackupStorageRedundancy const type.
@@ -1520,11 +1520,13 @@ const (
 	RequestedBackupStorageRedundancyLocal RequestedBackupStorageRedundancy = "Local"
 	// RequestedBackupStorageRedundancyZone ...
 	RequestedBackupStorageRedundancyZone RequestedBackupStorageRedundancy = "Zone"
+	// RequestedBackupStorageRedundancyGeoZone ...
+	RequestedBackupStorageRedundancyGeoZone RequestedBackupStorageRedundancy = "GeoZone"
 )
 
 // PossibleRequestedBackupStorageRedundancyValues returns an array of possible values for the RequestedBackupStorageRedundancy const type.
 func PossibleRequestedBackupStorageRedundancyValues() []RequestedBackupStorageRedundancy {
-	return []RequestedBackupStorageRedundancy{RequestedBackupStorageRedundancyGeo, RequestedBackupStorageRedundancyLocal, RequestedBackupStorageRedundancyZone}
+	return []RequestedBackupStorageRedundancy{RequestedBackupStorageRedundancyGeo, RequestedBackupStorageRedundancyLocal, RequestedBackupStorageRedundancyZone, RequestedBackupStorageRedundancyGeoZone}
 }
 
 // RestorePointType enumerates the values for restore point type.
