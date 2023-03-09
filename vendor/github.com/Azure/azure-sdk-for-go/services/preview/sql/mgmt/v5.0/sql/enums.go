@@ -471,7 +471,7 @@ const (
 
 // PossibleCurrentBackupStorageRedundancyValues returns an array of possible values for the CurrentBackupStorageRedundancy const type.
 func PossibleCurrentBackupStorageRedundancyValues() []CurrentBackupStorageRedundancy {
-	return []CurrentBackupStorageRedundancy{CurrentBackupStorageRedundancyGeo, CurrentBackupStorageRedundancyLocal, CurrentBackupStorageRedundancyZone}
+	return []CurrentBackupStorageRedundancy{CurrentBackupStorageRedundancyGeo, CurrentBackupStorageRedundancyLocal, CurrentBackupStorageRedundancyZone, CurrentBackupStorageRedundancyGeoZone}
 }
 
 // DatabaseLicenseType enumerates the values for database license type.
