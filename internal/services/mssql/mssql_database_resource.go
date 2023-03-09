@@ -986,6 +986,7 @@ func resourceMsSqlDatabaseSchema() map[string]*pluginsdk.Schema {
 				string(sql.CurrentBackupStorageRedundancyGeo),
 				string(sql.CurrentBackupStorageRedundancyLocal),
 				string(sql.CurrentBackupStorageRedundancyZone),
+				string(sql.CurrentBackupStorageRedundancyGeoZone),
 			}, false),
 		},
 

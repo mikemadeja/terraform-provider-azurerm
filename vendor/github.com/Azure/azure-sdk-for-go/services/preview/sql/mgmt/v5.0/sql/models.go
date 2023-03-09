@@ -9,13 +9,14 @@ package sql
 import (
 	"context"
 	"encoding/json"
+	"net/http"
+
 	"github.com/Azure/go-autorest/autorest"
 	"github.com/Azure/go-autorest/autorest/azure"
 	"github.com/Azure/go-autorest/autorest/date"
 	"github.com/Azure/go-autorest/autorest/to"
 	"github.com/Azure/go-autorest/tracing"
 	"github.com/gofrs/uuid"
-	"net/http"
 )
 
 // The package's fully qualified name.
@@ -2596,7 +2597,7 @@ type DatabaseProperties struct {
 	CurrentSku *Sku `json:"currentSku,omitempty"`
 	// AutoPauseDelay - Time in minutes after which database is automatically paused. A value of -1 means that automatic pause is disabled
 	AutoPauseDelay *int32 `json:"autoPauseDelay,omitempty"`
-	// CurrentBackupStorageRedundancy - READ-ONLY; The storage account type used to store backups for this database. Possible values include: 'CurrentBackupStorageRedundancyGeo', 'CurrentBackupStorageRedundancyLocal', 'CurrentBackupStorageRedundancyZone'
+	// CurrentBackupStorageRedundancy - READ-ONLY; The storage account type used to store backups for this database. Possible values include: 'CurrentBackupStorageRedundancyGeo', 'CurrentBackupStorageRedundancyLocal', 'CurrentBackupStorageRedundancyZone', ''CurrentBackupStorageRedundancyGeoZone'
 	CurrentBackupStorageRedundancy CurrentBackupStorageRedundancy `json:"currentBackupStorageRedundancy,omitempty"`
 	// RequestedBackupStorageRedundancy - The storage account type to be used to store backups for this database. Possible values include: 'RequestedBackupStorageRedundancyGeo', 'RequestedBackupStorageRedundancyLocal', 'RequestedBackupStorageRedundancyZone'
 	RequestedBackupStorageRedundancy RequestedBackupStorageRedundancy `json:"requestedBackupStorageRedundancy,omitempty"`

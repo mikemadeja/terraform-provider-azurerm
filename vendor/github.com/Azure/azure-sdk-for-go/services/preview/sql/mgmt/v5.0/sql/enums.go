@@ -465,6 +465,8 @@ const (
 	CurrentBackupStorageRedundancyLocal CurrentBackupStorageRedundancy = "Local"
 	// CurrentBackupStorageRedundancyZone ...
 	CurrentBackupStorageRedundancyZone CurrentBackupStorageRedundancy = "Zone"
+	// CurrentBackupStorageRedundancyGeoZone ...
+	CurrentBackupStorageRedundancyGeoZone CurrentBackupStorageRedundancy = "GeoZone"
 )
 
 // PossibleCurrentBackupStorageRedundancyValues returns an array of possible values for the CurrentBackupStorageRedundancy const type.
